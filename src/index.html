@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Koray Öztürkler</title>
+    <meta name="description" content="Software developer from Turkey, studying in the United States.">
+    <meta name="keywords"
+        content="kerim koray öztürkler, kerim koray, koray öztürkler, öztürkler, personal, software, development, programming, developer, iamthe2ndhuman, iamahuman, flutter, rust, android, apps">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/output.css">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">-->
+
+    <script src="https://kit.fontawesome.com/09d6753568.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="box animate-unblur">
+        <div class="flex flex-col-reverse md:flex-row md:justify-between md:items-center max-md:items-end">
+            <h1 class="max-md:pt-6">Koray Öztürkler</h1>
+            <div class="flex space-x-4 md:pl-16">
+                <a class="icon-button" href="https://github.com/IAmThe2ndHuman" target="_blank"
+                    aria-label="Visit my GitHub"><i class="fa-brands fa-github fa-2xl"></i></a>
+                <a class="icon-button" href="https://www.linkedin.com/in/kerim-koray-%C3%B6zt%C3%BCrkler-241bb922b/"
+                    target="_blank" aria-label="Visit my LinkedIn"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a class="icon-button" href="https://github.com/IAmThe2ndHuman" target="_blank"
+                    aria-label="Visit my Twitter"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                <a class="icon-button" href="https://www.instagram.com/kerimkoray.ozturkler/" target="_blank"
+                    aria-label="Visit my Instagram"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+
+                <a class="icon-button" href="https://play.google.com/store/apps/dev?id=7205097203010475122"
+                    target="_blank" aria-label="Visit my Google Play Store profile"><i
+                        class="fa-brands fa-google-play fa-2xl"></i></a>
+            </div>
+        </div>
+
+        <h3><span id="age">no js? 🤨</span> - Software developer and student</h3>
+        <script>
+            const currentDate = new Date();
+            const birthDate = new Date(2005, 6, 7);
+
+            let age = currentDate.getFullYear() - birthDate.getFullYear();
+            const m = currentDate.getMonth() - birthDate.getMonth();
+
+            if (m < 0 || (m === 0 && currentDate.getDate() < birthDate.getDate())) {
+                age--;
+            }
+
+            document.getElementById("age").textContent = age;
+        </script>
+        <!--<div class="button-row">
+            <a class="button" href="assets/etc/resume.pdf" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>Resume</span>
+            </a>
+        </div>-->
+
+    </div>
+    <div class="absolute z-10 right-0 bottom-0 p-4 flex justify-end items-center space-x-4">
+        <!--<a class="icon-button" href="https://tailwindcss.com/" target="_blank"><i
+                class="devicon-tailwindcss-plain text-3xl opacity-30"></i></a>-->
+        <a class="icon-button" href="https://github.com/IAmThe2ndHuman/iamthe2ndhuman.github.io" target="_blank"
+            aria-label="View the website source code"><i class="fa-solid fa-code fa-xl opacity-30"></i></a>
+    </div>
+</body>
+
+</html>

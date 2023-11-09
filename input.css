@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'work_sans regular';
+    src: url('/assets/fonts/worksans-variablefont_wght-webfont.woff2') format('woff2'),
+        url('/assets/fonts/worksans-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'work_sans italic';
+    src: url('/assets/fonts/worksans-italic-variablefont_wght-webfont.woff2') format('woff2'),
+        url('/assets/fonts/worksans-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    @apply bg-wallpaper bg-cover bg-center backdrop-blur-md flex;
+    height: 100%;
+    font-family: 'work_sans regular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    @apply font-bold text-6xl !m-0;
+}
+
+h2 {
+    @apply font-bold text-4xl !m-0;
+}
+
+h3 {
+    @apply text-2xl !m-0;
+}
+
+.box {
+    @apply m-auto min-w-70 md:max-w-2xl space-y-4 max-md:p-8
+}
+
+.icon-button {
+    @apply transition-colors duration-300 ease-in-out hover:text-gray-500;
+}
+
+.button {
+    @apply flex items-center justify-center space-x-3 select-none max-md:w-full border-2 border-white px-4 py-2 rounded-xl transition-colors duration-300 ease-in-out hover:text-gray-500 hover:border-gray-500;
+}
+
+.button-row {
+    @apply flex flex-wrap md:space-x-4 max-md:space-y-4;
+}
