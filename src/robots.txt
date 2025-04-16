@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /assets/
+Allow: /
 
 Sitemap: https://korayozturkler.me/sitemap.xml
